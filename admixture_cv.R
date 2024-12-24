@@ -1,3 +1,4 @@
+# compare different cross-validation (CV) errors to determine the optimal number of clusters (K) for ADMIXTURE analysis.
 for K in {3..10}; do
     admixture --cv ld_pruned_data.bed $K > admixture_k${K}.out
 done
